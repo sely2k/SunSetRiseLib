@@ -7,8 +7,8 @@
     <ProjectGuid>{4AF77D30-E449-4109-81C5-E3786D768F63}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SunSetRiseLib.v4._5</RootNamespace>
-    <AssemblyName>SunSetRiseLib.v4.5</AssemblyName>
+    <RootNamespace>SunSetRiseLib</RootNamespace>
+    <AssemblyName>SunSetRiseLib</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
