@@ -49,9 +49,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SunSetRiseLib.v4.5.1\SunSetRiseLib.v4.5.1.csproj">
-      <Project>{6c915c48-f5bf-4dc2-af39-49a7737e1e08}</Project>
-      <Name>SunSetRiseLib.v4.5.1</Name>
+    <ProjectReference Include="..\..\SunSetRiseLib.v4.5\SunSetRiseLib.v4.5.csproj">
+      <Project>{4af77d30-e449-4109-81c5-e3786d768f63}</Project>
+      <Name>SunSetRiseLib.v4.5</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
