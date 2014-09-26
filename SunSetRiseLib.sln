@@ -15,11 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunSetRiseLib.v4.0", "SunSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunSetRiseLib.v4.5", "SunSetRiseLib.v4.5\SunSetRiseLib.v4.5.csproj", "{4AF77D30-E449-4109-81C5-E3786D768F63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunSetRiseLib.v4.5.1", "SunSetRiseLib.v4.5.1\SunSetRiseLib.v4.5.1.csproj", "{6C915C48-F5BF-4DC2-AF39-49A7737E1E08}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestConsole", "TestConsole", "{520AF606-904F-456E-861C-74AF6C8E3717}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole.v4.5.1", "TestConsole\TestConsole.v4.5.1\TestConsole.v4.5.1.csproj", "{393CFE8B-CBF7-4235-A56B-CF5EF305F91F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SunSetRiseLib.v4.5.1", "SunSetRiseLib.v4.5.1\SunSetRiseLib.v4.5.1.csproj", "{865320C9-E40C-4323-87CE-E997F7796859}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,14 +51,14 @@ Global
 		{4AF77D30-E449-4109-81C5-E3786D768F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AF77D30-E449-4109-81C5-E3786D768F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AF77D30-E449-4109-81C5-E3786D768F63}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6C915C48-F5BF-4DC2-AF39-49A7737E1E08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C915C48-F5BF-4DC2-AF39-49A7737E1E08}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6C915C48-F5BF-4DC2-AF39-49A7737E1E08}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6C915C48-F5BF-4DC2-AF39-49A7737E1E08}.Release|Any CPU.Build.0 = Release|Any CPU
 		{393CFE8B-CBF7-4235-A56B-CF5EF305F91F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{393CFE8B-CBF7-4235-A56B-CF5EF305F91F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{393CFE8B-CBF7-4235-A56B-CF5EF305F91F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{393CFE8B-CBF7-4235-A56B-CF5EF305F91F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{865320C9-E40C-4323-87CE-E997F7796859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865320C9-E40C-4323-87CE-E997F7796859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865320C9-E40C-4323-87CE-E997F7796859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865320C9-E40C-4323-87CE-E997F7796859}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
