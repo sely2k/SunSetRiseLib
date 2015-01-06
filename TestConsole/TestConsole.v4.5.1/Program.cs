@@ -22,7 +22,7 @@ namespace TestConsole.v4._5._1
             JD = Util.calcJD(date);  //OR   JD = Util.calcJD(2014, 6, 1);
             double sunRise = Util.calcSunRiseUTC(JD, latitude, longitude);
             double sunSet = Util.calcSunSetUTC(JD, latitude, longitude);
-            double sunrise = Util.calcSunriseUTC(JD, latitude, longitude);
+            double sunrise = Util.calcSunRiseUTCWithFraction(JD, latitude, longitude);
 
             System.Console.WriteLine("#########################");
             System.Console.WriteLine("Util.getTimeString");

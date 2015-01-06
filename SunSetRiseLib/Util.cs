@@ -422,7 +422,7 @@ namespace SunSetRiseLib
         //***********************************************************************/
 
         [Obsolete("calcSunriseUTCWithFraction is deprecated, please use calcSunRiseUTC instead.", true)]
-        static public double calcSunriseUTCWithFraction(double JD, double latitude, double longitude)
+        static public double calcSunriseUTC(double JD, double latitude, double longitude)
         {
             return calcSunRiseUTCWithFraction(JD, latitude, longitude);
         }
