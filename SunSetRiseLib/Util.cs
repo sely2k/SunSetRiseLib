@@ -421,9 +421,19 @@ namespace SunSetRiseLib
         //* time in minutes from zero Z	
         //***********************************************************************/
 
-        static public double calcSunriseUTC(double JD, double latitude, double longitude)
+        [Obsolete("calcSunriseUTCWithFraction is deprecated, please use calcSunRiseUTC instead.", true)]
+        static public double calcSunriseUTCWithFraction(double JD, double latitude, double longitude)
         {
+            return calcSunRiseUTCWithFraction(JD, latitude, longitude);
+        }
+
+        [Obsolete("calcSunRiseUTCWithFraction is deprecated because noo work yet :), please use calcSunRiseUTC instead.")]
+        static public double calcSunRiseUTCWithFraction(double JD, double latitude, double longitude)
+        {
+            //TODO: this method don't work!!! I have to fix it
             double t = calcTimeJulianCent(JD);
+            /*
+            
 
             // *** Find the time of solar noon at the location, and use
             // that declination. This is better than start of the 
@@ -440,16 +450,33 @@ namespace SunSetRiseLib
 
             double delta = longitude - radToDeg(hourAngle);
             double timeDiff = 4 * delta;	// in minutes of time
-            double timeUTC = 720 + timeDiff - eqTime;	// in minutes
+            
+            double timeUTC = calcSunRiseUTC(JD, latitude, longitude); // 720 + timeDiff - eqTime;	// in minutes
+            */
 
+            double eqTime = 0;
+            double solarDec = 0;
+            double hourAngle = 0;
+            double delta = 0;
+            double timeDiff = 0;
+            double timeUTC = calcSunRiseUTC(JD, latitude, longitude);
             // alert("eqTime = " + eqTime + "\nsolarDec = " + solarDec + "\ntimeUTC = " + timeUTC);
 
             // *** Second pass includes fractional jday in gamma calc
+            //this is the good function for calculate the time UTC of the sunRise
+            //var t = calcTimeJulianCent(JD);
+            //var eqTime = calcEquationOfTime(t);
+            //var solarDec = calcSunDeclination(t);
+            //var hourAngle = calcHourAngleSunrise(latitude, solarDec);
+            //hourAngle = -hourAngle;
+            //var delta = longitude + radToDeg(hourAngle);
+            //var timeUTC = 720 - (4.0 * delta) - eqTime;	// in minutes
 
             double newt = calcTimeJulianCent(calcJDFromJulianCent(t) + timeUTC / 1440.0);
             eqTime = calcEquationOfTime(newt);
             solarDec = calcSunDeclination(newt);
             hourAngle = calcHourAngleSunrise(latitude, solarDec);
+            hourAngle = -hourAngle;
             delta = longitude - radToDeg(hourAngle);
             timeDiff = 4 * delta;
             timeUTC = 720 + timeDiff - eqTime; // in minutes

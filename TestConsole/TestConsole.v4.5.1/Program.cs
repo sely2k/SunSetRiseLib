@@ -22,10 +22,28 @@ namespace TestConsole.v4._5._1
             JD = Util.calcJD(date);  //OR   JD = Util.calcJD(2014, 6, 1);
             double sunRise = Util.calcSunRiseUTC(JD, latitude, longitude);
             double sunSet = Util.calcSunSetUTC(JD, latitude, longitude);
+            double sunrise = Util.calcSunriseUTC(JD, latitude, longitude);
+
+            System.Console.WriteLine("#########################");
+            System.Console.WriteLine("Util.getTimeString");
+            System.Console.WriteLine("#########################");
+            System.Console.Write("SunRise ");
             System.Console.WriteLine(Util.getTimeString(sunRise, zone, JD, dst));
+            System.Console.Write("Sunrise ");
+            System.Console.WriteLine(Util.getTimeString(sunrise, zone, JD, dst));
+            System.Console.Write("SunSet ");
             System.Console.WriteLine(Util.getTimeString(sunSet, zone, JD, dst));
+            
+
             System.Console.WriteLine("");
+            System.Console.WriteLine("#########################");
+            System.Console.WriteLine("Util.getDateTime");
+            System.Console.WriteLine("#########################");
+            System.Console.Write("SunRise ");
             System.Console.WriteLine(Util.getDateTime(sunRise, zone, date, dst).Value.ToString());
+            System.Console.Write("Sunrise ");
+            System.Console.WriteLine(Util.getDateTime(sunrise, zone, date, dst).Value.ToString());
+            System.Console.Write("SunSet ");
             System.Console.WriteLine(Util.getDateTime(sunSet, zone, date, dst).Value.ToString());
         }
     }
